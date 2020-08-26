@@ -1,0 +1,20 @@
+# instal django: python -m pip install django=2.2
+# membuat project: python -m django-admin startproject <nama_project>
+
+# masuk ke folder project terlebih dahulu
+# membuat app: python manage.py startapp <nama_app>
+
+# menjalankan project: python manage.py runserver
+# kemudian buka web browser
+
+# di dalam project ada setting.py bisa masukkan app
+# ada setting template juga
+
+# urls.py untuk menuliskan alamat urls
+
+# task ada:
+# templates berisi indeks.html kede html untuk ditampilkan
+# apps.py berisi tentang aplikasi yang dibuat
+# models.py untuk membuat tabel
+# urls.py digunakan untuk membuat alamat
+# views.py import dari models

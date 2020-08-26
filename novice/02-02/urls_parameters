@@ -1,0 +1,7 @@
+# Django Urls with parameters:
+# 1. membuat url di urls, path('<id>/', views.detail)
+# 2. membuat fungsi detail di views
+#    -mengambil task berdasarkan id yang masuk
+#    -merender template detail dengan memberi data task
+# 3. membuat template detail.html
+#    -menampilkan data task

@@ -1,0 +1,17 @@
+menyiapkan table di database
+1 membuat model
+2 men-generate migration
+3 menjalankan migration
+
+mengambil data
+1 import model
+2 ambil data melalui model
+
+mengirim/ membuat data
+1 di template,
+ buat form dengan method POST,
+ action kosong,
+ sa ditambahkan csrf_token
+2 di ciews,
+ memeriksa apakah terjadi POST,
+ jika benar maka simpan data dari POST tersebut 
