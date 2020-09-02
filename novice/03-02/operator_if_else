@@ -1,0 +1,10 @@
+# operator:
+# - compare
+# - logic
+# https://www.w3schools.com/python/python_operators.asp
+
+# decision making:
+# - if
+# - else
+# - elif
+# https://www.w3schools.com/python/python_conditions.asp

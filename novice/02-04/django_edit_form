@@ -1,0 +1,8 @@
+# django edit form:
+# 1. urls tambah path, path('<id/edit',views.edit)
+# 2. views tambah fungsi edit
+#       - memeriksa apakah ada pengiriman data
+#       - kalau ada melakukan edit
+#       - kalau tidak, tampilkan form edit
+# 3. template index mengaktifkan tombol edit dengan menggunakan anchor
+# 4. buat template untuk edit
