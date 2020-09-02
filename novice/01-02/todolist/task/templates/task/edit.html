@@ -16,18 +16,19 @@
       <H1>Todolist</H1>
         <form action="#" method="POST" class="mt-3">
           {% csrf_token %}
-                <table class="table table-striped">
-                      <tr>
-                        <th scope="col">Id</th>
-                        <th scope="col">Nama</th>
-                      </tr>
-                      <tr>
-                        <td>{{data.id}}</td>
-                        <td><input type="text" name="name" value="{{data.name}}"></td>
-                      </tr>
-                </table>
-                  <button class="btn-primary">submit</button>
-                </main>
+            <table class="table table-striped">
+                  <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Nama</th>
+                  </tr>
+                  <tr>
+                    <td>{{data.id}}</td>
+                    <td> <input type="text" name="name" value="{{data.name}}"></td>
+                  </tr>
+              </table>
+              <button class="btn-primary">submit</button>
+        </form>
+      </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

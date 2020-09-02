@@ -4,7 +4,7 @@ from . import models
 def index(req):
     if req.POST:
         models.Task.objects.create(name=req.POST['name'])
-        return redirect ('/')
+        return redirect('/') 
 
     tasks = models.Task.objects.all()
     return render(req, 'task/index.html',{
@@ -15,7 +15,7 @@ def index(req):
 def detail(req, id):
     tasks = models.Task.objects.filter(pk=id).first()
     return render(req, 'task/detail.html', {
-        'data': task,
+        'data': tasks,
     })
 
 def delete(req, id):
@@ -24,9 +24,9 @@ def delete(req, id):
 
 def edit(req, id):
     if req.POST:
-        tasks= models.Task.objects.filter(pk=id).update(name=req.POST['name'])
-        return redirect('/')
+        tasks = models.Task.objects.filter(pk=id).update(name=req.POST['name'])
+        return redirect('/') 
     tasks = models.Task.objects.filter(pk=id).first()
-    return render(req, 'task/index.html',{
+    return render(req, 'task/edit.html', {
         'data': tasks,
     })
